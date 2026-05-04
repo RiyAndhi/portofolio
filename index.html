@@ -41,7 +41,7 @@
                         <span class="name-highlight">Riyan Andhika</span>
                     </h1>
                     <p class="hero-subtitle">
-                        <span class="role-text">Mahasiswa Informatika</span>
+                        <span class="role-text">Fresh Graduate Informatika</span>
                     </p>
                     <p class="hero-description">
                         <!-- Fokus menciptakan solusi digital yang berdampak melalui desain intuitif dan kode efisien. -->
@@ -81,15 +81,15 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        Sebagai mahasiswa Informatika, saya memiliki ketertarikan besar pada dunia teknologi dan bagaimana inovasi digital dapat memberikan dampak nyata dalam kehidupan sehari-hari. Proses belajar dan eksplorasi menjadi bagian penting dalam perjalanan saya menciptakan berbagai karya digital.
+                        Saya adalah Fresh Graduate Informatika yang memiliki minat besar dalam pengembangan aplikasi berbasis digital. Saya telah mengerjakan beberapa proyek selama masa studi yang membantu saya memahami bagaimana membangun solusi yang efektif dan mudah digunakan.
                     </p>
                     <p>
-                        Menggabungkan logika, kreativitas, dan rasa ingin tahu, saya percaya bahwa setiap solusi digital harus mampu menjawab kebutuhan dengan cara yang sederhana, efisien, dan menyenangkan bagi penggunanya.
+                        Saya terbiasa berpikir secara logis, menyelesaikan masalah, serta mengembangkan ide menjadi sebuah aplikasi yang dapat digunakan secara nyata. Selain itu, saya juga mampu bekerja secara mandiri maupun dalam tim.
                     </p>
                     <p>
-                        Terus belajar dan berkembang adalah bagian dari cara saya menyambut tantangan digital di masa depan.
+                        Saat ini, saya siap untuk berkontribusi di dunia kerja dan terus mengembangkan kemampuan dalam menciptakan solusi digital yang bermanfaat.
                     </p>
-                    <div class="about-stats">
+                    <!-- <div class="about-stats">
                         <div class="stat-item">
                             <span class="stat-number" data-target="-">0</span>
                             <span class="stat-label">Proyek Selesai</span>
@@ -102,7 +102,7 @@
                             <span class="stat-number" data-target="-">0</span>
                             <span class="stat-label">Sertifikat Diperoleh</span>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -128,7 +128,7 @@
                             <i class="fab fa-js-square"></i>
                             <span>JavaScript</span>
                         </div>
-                        <div class="skill-item">
+                        <!-- <div class="skill-item">
                             <i class="fab fa-bootstrap"></i>
                             <span>Bootstrap</span>
                         </div>
@@ -137,7 +137,7 @@
                                 alt="Tailwind"
                                 style="width: 40px; height: 40px; filter: brightness(0) saturate(100%) invert(56%) sepia(68%) saturate(2010%) hue-rotate(162deg) brightness(101%) contrast(98%);">
                             <span>Tailwind</span>
-                        </div>
+                        </div> -->
                         <div class="skill-item">
                             <i class="fab fa-figma"></i>
                             <span>Figma</span>
@@ -159,10 +159,10 @@
                             <i class="fas fa-fire"></i>
                             <span>Firebase</span>
                         </div>
-                        <div class="skill-item">
+                        <!-- <div class="skill-item">
                             <i class="fab fa-python"></i>
                             <span>Python</span>
-                        </div>
+                        </div> -->
                         <div class="skill-item">
                             <i class="fas fa-terminal"></i>
                             <span>C++</span>
@@ -324,11 +324,11 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Mari Berkolaborasi</h2>
+            <h2 class="section-title">Hubungi Saya</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Hubungi Saya</h3>
-                    <p>Tertarik bekerja sama atau ingin berdiskusi tentang proyek digital? Yuk, ngobrol!</p>
+                    <h3>Terbuka untuk peluang kerja</h3>
+                    <p>Saya terbuka untuk kesempatan kerja dan siap memberikan kontribusi yang maksimal. Silakan hubungi saya melalui form ini atau kontak yang tersedia untuk berdiskusi lebih lanjut.</p>
                     <div class="contact-items">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
@@ -361,19 +361,21 @@
                         </a>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form id="contactForm" class="contact-form">
                     <div class="form-group">
-                        <input type="text" placeholder="Nama Lengkap" required>
+                        <input type="text" name="nama" placeholder="Nama Lengkap" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Email" required>
+                        <input type="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Subjek" required>
+                        <input type="text" name="subjek" placeholder="Subjek" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                        <textarea name="pesan" placeholder="Pesan Anda" rows="5" required></textarea>
                     </div>
+                    <input type="hidden" name="_subject" value="Pesan dari Website Portfolio">
+                    <input type="text" name="_gotcha" style="display:none">
                     <button type="submit" class="btn btn-primary">Kirim Pesan</button>
                 </form>
             </div>
@@ -383,7 +385,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Portfolio Riyan Andhika.</p>
+            <p>&copy; 2026 Portfolio Riyan Andhika.</p>
         </div>
     </footer>
 

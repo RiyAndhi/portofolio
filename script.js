@@ -113,7 +113,7 @@ window.addEventListener('load', () => {
     const roleText = document.querySelector('.role-text');
     if (roleText) {
         setTimeout(() => {
-            typeWriter(roleText, 'Mahasiswa Informatika', 80);
+            typeWriter(roleText, 'Fresh Graduate Informatika', 80);
         }, 2500);
     }
 });
@@ -129,32 +129,25 @@ window.addEventListener('scroll', () => {
     });
 });
 
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
+document.querySelector('.contact-form').addEventListener('submit', async function(e) {
     e.preventDefault();
-    
+
     const formData = new FormData(this);
-    const name = this.querySelector('input[type="text"]').value;
-    const email = this.querySelector('input[type="email"]').value;
-    const subject = this.querySelector('input[type="text"]:nth-of-type(2)').value;
-    const message = this.querySelector('textarea').value;
-    
-    if (!name || !email || !subject || !message) {
-        alert('Mohon lengkapi semua field!');
-        return;
-    }
-    
-    const submitBtn = this.querySelector('.btn-primary');
-    const originalText = submitBtn.textContent;
-    
-    submitBtn.textContent = 'Mengirim...';
-    submitBtn.disabled = true;
-    
-    setTimeout(() => {
-        alert('Pesan berhasil dikirim! Terima kasih.');
+
+    const response = await fetch("https://formspree.io/f/xrejpqrj", {
+        method: "POST",
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    });
+
+    if (response.ok) {
+        alert("Pesan berhasil dikirim!");
         this.reset();
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-    }, 2000);
+    } else {
+        alert("Gagal mengirim pesan.");
+    }
 });
 
 window.addEventListener('load', () => {
